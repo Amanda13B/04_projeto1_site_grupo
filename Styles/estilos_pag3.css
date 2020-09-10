@@ -1,0 +1,14 @@
+body{
+    font-family: 'Zilla Slab', serif;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+.barra-navegacao{
+    background-color: rgb(192, 15, 15);
+    color: white;
+}
+
+.logo-marca{
+    font-size: 26px;
+}
