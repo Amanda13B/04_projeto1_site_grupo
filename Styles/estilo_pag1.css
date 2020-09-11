@@ -1,1 +1,30 @@
+body
+{
+    background-color: white;
+}
 
+.barra-navegacao
+{
+    background-color: rgb(192, 15, 15);
+    color: white;
+}
+
+.logoRevolto
+{
+    
+}
+
+.fotosGrupo
+{
+    background-color: red;
+}
+
+.textoRevolto
+{
+    background-color: saddlebrown;
+}
+
+.logo-marca
+{
+    font-size: 26px;
+}
