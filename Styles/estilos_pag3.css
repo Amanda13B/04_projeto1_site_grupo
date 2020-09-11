@@ -1,0 +1,62 @@
+body{
+    font-family: 'Zilla Slab', serif;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+.barra-navegacao{
+    background-color: rgb(192, 15, 15);
+    color: white;
+}
+
+.logo-marca{
+    font-size: 26px;
+}
+
+.primeira-secao{
+    background-color: white;
+    color: rgb(230, 49, 49);
+    height: 40vh;
+}
+
+.links-pagina{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+
+.links-pagina a{
+    color: rgb(192, 15, 15);
+}
+
+.titulo-pagina{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10vh;
+}
+
+.icone-titulo{
+    font-size: 1.2em;
+}
+
+.projetos-amanda{
+    background-color: rgb(100, 15, 0);
+    border-top: 10px double red;
+    margin: 0;
+}
+
+.projetos-guilherme{
+    background-color: white;
+    color: firebrick;
+    margin: 0;
+}
+
+.redes-sociais{
+    font-size: 2.5em;
+}
+
+.redes-sociais a{
+    color: rgb(226, 33, 33);
+}
