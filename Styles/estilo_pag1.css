@@ -16,15 +16,67 @@ body
 
 .fotosGrupo
 {
-    background-color: red;
+    text-align: center;
+}
+
+.fotos
+{
+    transition: transform .2s;
+}
+
+.fotos:hover
+{
+    transform: scale(1.3);
 }
 
 .textoRevolto
 {
-    background-color: saddlebrown;
+    font-size: 1.5vw;
+    top: -7vh;
+    color: black;
 }
 
 .logo-marca
 {
     font-size: 26px;
+}
+
+.separacaoVermelha
+{
+    margin-left: 0;
+    margin-right: 0;
+    background-color:  rgb(192, 15, 15);
+}
+
+.separacaoMarrom
+{
+    margin-left: 0;
+    margin-right: 0;
+    background-color:  rgb(161, 122, 62);
+}
+
+.secaoTCC
+{
+    background-color:  rgb(190, 143, 71);
+}
+
+.tituloProjeto
+{
+    font-size: 3vw;
+    text-align: center;
+}
+
+.imagemProjeto
+{
+
+}
+
+.textoProjeto
+{
+    text-align: center;
+}
+
+.solid 
+{
+    border-top: 2px solid rgb(192, 15, 15);
 }
