@@ -17,6 +17,7 @@ body{
     background-color: white;
     color: rgb(230, 49, 49);
     height: 40vh;
+    margin-top: 65px;
 }
 
 .links-pagina{
@@ -41,22 +42,121 @@ body{
     font-size: 1.2em;
 }
 
+.nav-arrow{
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+}
+
+.nav-arrow a{
+    color: white;
+    font-size: 2em;
+}
+
 .projetos-amanda{
-    background-color: rgb(100, 15, 0);
+    background-color: rgb(88, 19, 7);
     border-top: 10px double red;
     margin: 0;
+    height: 170vh;
+}
+
+.projetos-amanda h2{
+    margin: 30px 0 0 20px;
 }
 
 .projetos-guilherme{
-    background-color: white;
-    color: firebrick;
+    border-top: 10px double white;
+    color: rgb(224, 18, 18);
     margin: 0;
+    height: 170vh;
+}
+
+.projetos-guilherme h2{
+    margin: 30px 20px 0 0;
+}
+
+.capa-principal-jogo{
+    height: 250px;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+h3.game-title{
+    color: #129BB0;
+}
+
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}
+
+.apresentacao-jogo{
+    clear: both;
+    width: 85vw;
+    height: 40vh;
+    margin: 8vh auto;
+}
+
+.apresentacao-jogo a{
+    color: #129BB0;
+    font-weight: 600;
+}
+
+.paragrafo-direita{
+    position: relative;
+    top: 3vh;
+    left: 5vw;
+    width: 80vw;
+}
+
+.paragrafo-esquerda{
+    position: relative;
+    top: 3vh;
+    width: 70vw;
+}
+
+.style-text{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+footer{
+    background-color:rgb(192, 15, 15);
+    height: 31vh;
+}
+
+footer h5{
+   padding: 10px 0 0 20px; 
+   margin-bottom: 5vh;
 }
 
 .redes-sociais{
+    font-size: 1em;
+}
+
+.redes-sociais i{
     font-size: 2.5em;
 }
 
 .redes-sociais a{
-    color: rgb(226, 33, 33);
+    color: white;
+}
+
+.email{
+    position: relative;
+    top: 10px;
+}
+
+.email a{
+    color: white;
+}
+
+.email i{
+    position: relative;
+    top: 4px;
+    right: 6px;
+    font-size: 1.3em;
 }
