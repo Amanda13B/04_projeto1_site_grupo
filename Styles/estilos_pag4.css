@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Zilla Slab', serif;
+    background-color: white;
+    color: red;
+}
+
+.barra-navegacao{
+    background-color: rgb(192, 15, 15);
+    color: white;
+}
+
+.logo-marca{
+    font-size: 26px;
+}
+
+.inicio{
+    margin-top: 10vh;
+}
+
+.titulo-pagina{
+    padding-top: 10vh;
+}
+
+.linha-links{
+    margin-top: 6vh;
+}
+
+.linha-links a{
+    color: rgb(192, 15, 15);
+    font-weight: 600;
+}
+
+.nav-arrow{
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.nav-arrow a{
+    color: #129BB0;
+    font-size: 2em;
+}
+
+.participantes{
+    text-align:center;
+    text-decoration: underline;
+    margin-bottom: 10vh;
+}
+
+.cartao-participante{
+    border: 4px double red;
+    width: 30vw;
+    min-height: 40vh;
+    max-height: 70vh;
+    margin: 10vh auto;
+}
+
+.imagem-cartao{
+    width: 10vw;
+    margin: 5px auto;
+}
+
+.informacoes-participante{
+    padding: 5px;
+}
+
+.informacoes-participante p{
+    color: black;
+}
+
+.secao-final{
+    background-color: rgb(39, 39, 39);
+    margin-top: 10vh;
+}
+
+.secao-final p{
+    color: white;
+    width: 80vw;
+    margin: 20vh auto;
+}
+
+.titulo-secao{
+    margin-top: 10vh;
+}
+
+footer{
+    background-color:rgb(192, 15, 15);
+    height: 31vh;
+}
+
+footer h5{
+   padding: 10px 0 0 8px; 
+   margin-bottom: 5vh;
+   color: white;
+}
+
+.redes-sociais{
+    font-size: 1em;
+}
+
+.redes-sociais i{
+    font-size: 2.5em;
+}
+
+.redes-sociais a{
+    color: white;
+}
+
+.email{
+    position: relative;
+    top: 10px;
+}
+
+.email a{
+    color: white;
+}
+
+.email i{
+    position: relative;
+    top: 4px;
+    right: 6px;
+    font-size: 1.3em;
+}
