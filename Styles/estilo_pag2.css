@@ -54,10 +54,73 @@ body
     border-color:  rgb(121, 87, 41);
 }
 
+.imagensSBorda
+{
+
+}
+
 .textoPagina
 {
     font-family: 'Zilla Slab', serif;
     color:  rgb(94, 69, 33);
     font-size: 2vw;
     text-align: center;
+}
+
+.divisoria
+{
+    border-width: thick;
+    border-color:  rgb(121, 87, 41);
+    border-style: dashed;
+}
+
+.secaoFooter
+{
+    background-color: rgb(85, 62, 29);;
+}
+
+.redes-sociais
+{
+    font-size: 1em;
+}
+
+.redes-sociais i
+{
+    font-size: 2.5em;
+}
+
+.redes-sociais a
+{
+    color: rgb(125, 175, 32);
+}
+
+.email
+{
+    position: relative;
+    top: -10px;
+}
+
+.email a
+{
+    color: rgb(125, 175, 32);
+}
+
+.email i
+{
+    position: relative;
+    top: 4px;
+    right: 6px;
+    font-size: 1.3em;
+}
+
+.tituloRedes
+{
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(137, 199, 23);
+}
+
+.solid 
+{
+    border-top: 2px solid rgb(192, 15, 15);
 }
