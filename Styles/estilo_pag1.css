@@ -95,6 +95,88 @@ body
     font-family: 'Zilla Slab', serif;
 }
 
+.tituloOutrosProjetos
+{
+    top: 3vh;
+    text-align: center;
+}
+
+.headerProjetos
+{
+    font-size: 4vw;
+    color: rgb(224, 18, 18);;
+}
+
+.ImagensProjetos
+{
+    transform: scale(0.7);
+    border-color: red;
+    border-style: double;
+    border-width: 20px;
+    
+}
+
+.textoProjetoEsquerda
+{
+    font-size: 1.5vw;
+    margin-left: 22vw;
+    color: rgb(224, 18, 18);
+    text-decoration: underline red;
+}
+
+.textoProjetoDireita
+{
+    font-size: 1.5vw;
+    color: rgb(224, 18, 18);
+    text-decoration: underline red;
+}
+
+.redes-sociais
+{
+    font-size: 1em;
+}
+
+.redes-sociais i
+{
+    font-size: 2.5em;
+}
+
+.redes-sociais a
+{
+    color: white;
+}
+
+.email
+{
+    position: relative;
+    top: -10px;
+}
+
+.email a
+{
+    color: white;
+}
+
+.email i
+{
+    position: relative;
+    top: 4px;
+    right: 6px;
+    font-size: 1.3em;
+}
+
+.secaoFooter
+{
+    background-color: rgb(224, 18, 18);
+}
+
+.tituloRedes
+{
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+}
+
 .solid 
 {
     border-top: 2px solid rgb(192, 15, 15);
