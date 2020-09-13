@@ -57,6 +57,8 @@ body
 
 .secaoTCC
 {
+    position: relative;
+    z-index: -5;
     background-color:  rgb(190, 143, 71);
 }
 
@@ -64,16 +66,33 @@ body
 {
     font-size: 3vw;
     text-align: center;
+    z-index: 1;
 }
 
 .imagemProjeto
 {
+    position: absolute;
+    z-index: 0;
+}
 
+.imagemDeserto
+{
+    position: absolute;
+    transform: scale(5);
+    top: 540px;
+    z-index: -4;
+    opacity: 0.5;
 }
 
 .textoProjeto
 {
+    z-index: 1;
     text-align: center;
+    position: relative;
+    margin-top: 140px;
+    word-break: break-all;
+    font-size: 20px;
+    font-family: 'Zilla Slab', serif;
 }
 
 .solid 
