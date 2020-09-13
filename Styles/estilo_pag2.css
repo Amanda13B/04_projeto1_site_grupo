@@ -1,0 +1,63 @@
+body
+{
+    background-color:  rgb(190, 143, 71);
+}
+
+.barra-navegacao
+{
+    background-color: rgb(129, 95, 45);
+    color: white;
+}
+
+.header1
+{
+    margin-top: 12vh;
+}
+
+.titlePagina
+{
+    font-family: 'Zilla Slab', serif;
+    color:  rgb(94, 69, 33);
+    font-size: 8vw;
+    text-align: center;
+}
+
+.destaqueTitulo
+{
+    color:  rgb(65, 48, 22);
+}
+
+.linksMargin
+{ 
+    margin-top: 10vh;
+}
+
+.linksProperty
+{
+    font-size: 1.8vw;
+    text-decoration: underline;
+    color:  rgb(94, 69, 33);
+}
+
+.subTitulo
+{
+    font-family: 'Zilla Slab', serif;
+    color:  rgb(94, 69, 33);
+    font-size: 5vw;
+    text-align: center;
+}
+
+.imagensPag
+{
+    border-width: 13px;
+    border-style: dashed;
+    border-color:  rgb(121, 87, 41);
+}
+
+.textoPagina
+{
+    font-family: 'Zilla Slab', serif;
+    color:  rgb(94, 69, 33);
+    font-size: 2vw;
+    text-align: center;
+}
