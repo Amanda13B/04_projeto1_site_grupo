@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Zilla Slab', serif;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+p{
+    font-size: 1em;
+}
+
+.barra-navegacao{
+    background-color: rgb(192, 15, 15);
+    color: white;
+}
+
+.logo-marca{
+    font-size: 26px;
+}
+
+.primeira-secao{
+    background-color: white;
+    color: rgb(230, 49, 49);
+    height: 40vh;
+    margin-top: 65px;
+}
+
+.links-pagina{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+
+.links-pagina a{
+    color: rgb(192, 15, 15);
+}
+
+.titulo-pagina{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10vh;
+}
+
+.icone-titulo{
+    font-size: 1.2em;
+}
+
+.nav-arrow{
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.nav-arrow a{
+    color: #129BB0;
+    font-size: 2em;
+}
+
+.projetos-amanda{
+    border-top: 10px double red;
+    padding: 5vh 5vh 10vh 5vh;
+}
+
+.projetos-amanda a,
+.projetos-guilherme a{
+    color: #129BB0;
+}
+
+.projetos-guilherme{
+    background-color: white;
+    color: red;
+    border-top: 10px double red;
+    padding: 5vh 5vh 10vh 5vh;
+}
+
+.titulo-jogo{
+    margin: 5vh 0;
+    color: #129BB0;
+}
+
+.imagem-capa{
+    min-width: 10vw;
+    max-width: 30vw;
+    margin: 0 auto;
+}
+
+.imagem-capa img{
+    border: 10px double rgb(192, 15, 15);
+}
+
+@media (max-width: 991px){
+    
+    .titulo-jogo h3{
+        text-align: center;
+    }
+
+    .imagem-capa{
+        min-width: 20vw;
+        max-width: 40vw;
+        margin: 0 auto 5vh auto;
+    }
+    
+    .ordem-inversa-1 {
+        order: 1;
+    }
+
+    .ordem-inversa-2{
+        order: 2;
+    }
+}
+
+.carrossel-imagens{
+    width: 60vw;
+    margin: 8vh auto;
+}
+
+.style-text{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+footer{
+    background-color:rgb(192, 15, 15);
+}
+
+footer h5{
+   padding-top: 10px; 
+   margin-bottom: 5vh;
+}
+
+.redes-sociais{
+    font-size: 1em;
+}
+
+.redes-sociais i{
+    font-size: 2.5em;
+}
+
+@media (max-width: 480px){
+    .redes-sociais i{
+        font-size: 1.5em;
+    }
+}
+
+.redes-sociais a{
+    color: white;
+}
+
+.email{
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.email a{
+    color: white;
+}
+
+.email i{
+    position: relative;
+    top: 4px;
+    right: 6px;
+    font-size: 1.3em;
+}
