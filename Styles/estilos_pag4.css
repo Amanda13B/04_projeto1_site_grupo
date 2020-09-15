@@ -101,6 +101,10 @@ body{
     color: red;
 }
 
+.informacoes-participante i:hover{
+    color: rgb(138, 13, 13);
+}
+
 .secao-final{
     background-color: rgb(39, 39, 39);
     margin-top: 10vh;
@@ -108,8 +112,12 @@ body{
 
 .secao-final p{
     color: white;
-    width: 80vw;
-    margin: 20vh auto;
+    width: 70vw;
+    margin: 10vh auto 18vh auto;
+}
+
+.secao-final a{
+    color: red;
 }
 
 .titulo-secao{
@@ -118,11 +126,10 @@ body{
 
 footer{
     background-color:rgb(192, 15, 15);
-    height: 31vh;
 }
 
 footer h5{
-   padding: 10px 0 0 8px; 
+   padding-top: 10px; 
    margin-bottom: 5vh;
    color: white;
 }
@@ -135,13 +142,19 @@ footer h5{
     font-size: 2.5em;
 }
 
+@media (max-width: 480px){
+    .redes-sociais i{
+        font-size: 1.5em;
+    }
+}
+
 .redes-sociais a{
     color: white;
 }
 
 .email{
-    position: relative;
-    top: 10px;
+    margin-top: 10px;
+    padding-bottom: 20px;
 }
 
 .email a{
