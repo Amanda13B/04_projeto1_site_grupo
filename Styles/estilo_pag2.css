@@ -124,3 +124,22 @@ body
 {
     border-top: 2px solid rgb(192, 15, 15);
 }
+
+html 
+{
+    scroll-behavior: smooth;
+}
+
+.nav-arrow
+{
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.nav-arrow a
+{
+    color: #129BB0;
+    font-size: 2em;
+}
