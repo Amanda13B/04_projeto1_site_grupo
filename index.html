@@ -17,40 +17,38 @@
     </head>
     <body>
 
-        <!--Menu de navegação no topo do site-->
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-dark barra-navegacao">
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark barra-navegacao">
 
-                <div class="container-fluid">
-                    <!-- cria o texto da "marca" do site -->
-                    <a class="navbar-brand h1 mb-0 logo-marca" href="./index.html">Revolto Software</a>
-    
-                    <!-- cria o botão no canto que vai carregar os itens do menu quando a página for menor -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <!-- itens dos links de acesso da barra superior de navegação -->
-                    <div class="collapse navbar-collapse" id="navbarSite">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="#">Outros Projetos do Grupo</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Projeto Final</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./pagina4.html">O Grupo</a></li>
-                        </ul>
-                    </div>
+            <div class="container-fluid">
+                <!-- cria o texto da "marca" do site -->
+                <a class="navbar-brand h1 mb-0 logo-marca" href="./index.html">Revolto Software</a>
+  
+                <!-- cria o botão no canto que vai carregar os itens do menu quando a página for menor -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+  
+                <!-- itens dos links de acesso da barra superior de navegação -->
+                <div class="collapse navbar-collapse" id="navbarSite">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="./pagina2.html">Projeto Final</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pagina3 copy.html">Demais Projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pagina4.html">O Grupo</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
 
         <!--Logo e membros do grupo e textinhos-->
         <div>
-            <div class="container-fluid">
+            <div class="container-fluid" id="inicio">
                 <div>
                     <img class="img-fluid logoRevolto" src="Imagens/Revolto logo.png" alt="Responsive image">
                 </div>
 
                 <div class="row">
-                    <div class="col-4 fotosGrupo">
+                    <div class="col-lg-4 fotosGrupo ordem-2">
                         <img class="img-fluid fotos img-thumbnail" src="Imagens/foto_amanda.jpg" alt="Responsive image">
 
                         <br>
@@ -68,13 +66,13 @@
                         </p>
                     </div>
 
-                    <div class="col-4 textoRevolto container-fluid">
+                    <div class="col-lg-4 textoRevolto container-fluid ordem-1">
                         <p class="badge text-wrap">
-                               A Revolto Software foi criada com o intuito de desenvolver jogos, principalmente jogos voltados para o entretenimento. A ideia e imagem da Revolto foi criada por João Paulo Manfredinni Barros, que se uniu aos outros 4 integrantes: Amanda, Guilherme, Larissa e Mikael, para maturar a ideia da empresa e, assim, conseguirem reconhecimento e terem a possibilidade de desenvolver jogos como nosso trabalho!
+                               A Revolto Software foi criada com o intuito de desenvolver jogos, principalmente jogos voltados para o entretenimento. A ideia e imagem da Revolto foram criadas por João Paulo Manfredini Barros, que se uniu aos outros 4 integrantes: Amanda, Guilherme, Larissa e Mikael, para maturar a ideia da empresa e, assim, conseguirem reconhecimento e terem a possibilidade de desenvolver jogos como seu trabalho!
                         </p>
                     </div>
                     
-                    <div class="col-4 fotosGrupo">
+                    <div class="col-lg-4 fotosGrupo ordem-3">
                         <img class="img-fluid fotos img-thumbnail" src="Imagens/boa foto minha.jpg" alt="Responsive image">
 
                         <br>
@@ -108,6 +106,13 @@
             </div>
         </div>
 
+        <!-- Flecha de navegação de volta para o topo -->
+        <div class="nav-arrow">
+            <nav>
+                <a href="#inicio"><!--up arrow--><i class="fas fa-arrow-circle-up"></i></a>
+            </nav>
+        </div>
+
         <!--Tease do Projeto do TCC-->
         <div>
             <div class="container-fluid">
@@ -136,7 +141,7 @@
 
                         <br>
 
-                        <h1 class="tituloProjeto">&#x1F335 LostNFound &#x1F335</h1>
+                        <h1 class="tituloProjeto"><span class="icone-titulo">&#x1F335</span> LostNFound <span class="icone-titulo">&#x1F335</span></h1>
 
                         <br><br>
 
@@ -231,31 +236,32 @@
         </div>
 
         <!-- Seção do Footer -->
-        <footer class="secaoFooter">
+        <footer>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col">
-                        <h5 class="tituloRedes">Redes Sociais da Revolto:</h5>
-                    </div>
+                    <h5 class="col text-center">Redes Sociais da Revolto:</h5>
                 </div>
     
-                <nav class="redes-sociais">
+                <div class="redes-sociais">
                     <div class="row">
                         <a target="_blank" class="col text-center" href="https://twitter.com/RevoltoSoftware"><!--Twitter--> <i class="fab fa-twitter-square"></i><br>Twitter</a>
                         <a target="_blank" class="col text-center" href="https://www.facebook.com/Revolto-Software-619054018538989/?epa=SEARCH_BOX"><!--Facebook--> <i class="fab fa-facebook-square"></i><br>Facebook</a>
                         <a target="_blank" class="col text-center" href="https://revoltosoftware.itch.io/"><!--Itch.io--><i class="fab fa-itch-io"></i><br>Itch.io</a>
                         <a target="_blank" class="col text-center" href="https://www.youtube.com/channel/UCkgNf8JKjBJUPBNDW-e6POg"><!--YouTube--><i class="fab fa-youtube"></i><br>YouTube</a>
                     </div>
-                </nav>
-    
+                </div>
+
                 <br>
-                <nav class="email">
+                <div class="email">
                     <div class="row">
-                        <a class="col text-right align-bottom" href="mailto:revoltosoftware@gmail.com"><!--email--><i class="far fa-envelope"></i> revoltosoftware@gmail.com</a>
+                        <a class="col text-right" href="mailto:revoltosoftware@gmail.com"><!--email--><i class="far fa-envelope"></i> revoltosoftware@gmail.com</a>
                     </div>
-                </nav>
+                </div>
+                
             </div>
         </footer>
+
+
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

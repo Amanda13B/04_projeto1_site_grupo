@@ -1,5 +1,6 @@
 body
 {
+    font-family: 'Zilla Slab', serif;
     background-color:  rgb(190, 143, 71);
 }
 
@@ -9,6 +10,10 @@ body
     color: white;
 }
 
+.logo-marca{
+    font-size: 26px;
+}
+
 .header1
 {
     margin-top: 12vh;
@@ -16,7 +21,6 @@ body
 
 .titlePagina
 {
-    font-family: 'Zilla Slab', serif;
     color:  rgb(94, 69, 33);
     font-size: 8vw;
     text-align: center;
@@ -39,6 +43,18 @@ body
     color:  rgb(94, 69, 33);
 }
 
+.nav-arrow{
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.nav-arrow a{
+    color: #b9ff38;
+    font-size: 2em;
+}
+
 .subTitulo
 {
     font-family: 'Zilla Slab', serif;
@@ -52,11 +68,6 @@ body
     border-width: 13px;
     border-style: dashed;
     border-color:  rgb(121, 87, 41);
-}
-
-.imagensSBorda
-{
-
 }
 
 .textoPagina
@@ -74,50 +85,48 @@ body
     border-style: dashed;
 }
 
-.secaoFooter
-{
-    background-color: rgb(85, 62, 29);;
+footer{
+    background-color:rgb(85, 62, 29);
 }
 
-.redes-sociais
-{
+footer h5{
+   padding-top: 10px; 
+   margin-bottom: 5vh;
+   color: rgb(137, 199, 23);
+}
+
+.redes-sociais{
     font-size: 1em;
 }
 
-.redes-sociais i
-{
+.redes-sociais i{
     font-size: 2.5em;
 }
 
-.redes-sociais a
-{
-    color: rgb(125, 175, 32);
+@media (max-width: 480px){
+    .redes-sociais i{
+        font-size: 1.5em;
+    }
 }
 
-.email
-{
-    position: relative;
-    top: -10px;
+.redes-sociais a{
+    color: rgb(137, 199, 23);
 }
 
-.email a
-{
-    color: rgb(125, 175, 32);
+.email{
+    margin-top: 10px;
+    padding-bottom: 20px;
 }
 
-.email i
-{
+.email a{
+    color: white;
+}
+
+.email i{
     position: relative;
     top: 4px;
     right: 6px;
     font-size: 1.3em;
-}
-
-.tituloRedes
-{
-    font-size: 1.2em;
-    text-align: center;
-    color: rgb(137, 199, 23);
 }
 
 .solid 
@@ -128,18 +137,4 @@ body
 html 
 {
     scroll-behavior: smooth;
-}
-
-.nav-arrow
-{
-    position: fixed;
-    right: 10px;
-    bottom: 15px;
-    z-index: 1;
-}
-
-.nav-arrow a
-{
-    color: #129BB0;
-    font-size: 2em;
 }

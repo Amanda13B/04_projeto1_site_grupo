@@ -1,5 +1,6 @@
 body
 {
+    font-family: 'Zilla Slab', serif;
     background-color: white;
 }
 
@@ -7,11 +8,6 @@ body
 {
     background-color: rgb(192, 15, 15);
     color: white;
-}
-
-.logoRevolto
-{
-    
 }
 
 .fotosGrupo
@@ -31,9 +27,35 @@ body
 
 .textoRevolto
 {
-    font-size: 1.5vw;
+    font-size: 1.4em;
     top: -7vh;
     color: black;
+}
+
+@media (max-width: 991px){
+    .fotosGrupo
+    {
+        margin: 5vh auto;
+    }
+    .textoRevolto
+    {
+        top: 0;
+        max-width: 70vw;
+        min-width: 50vw;
+        margin: 0 auto;
+    }
+
+    .ordem-1{
+        order: 1;
+    }
+
+    .ordem-2{
+        order: 2;
+    }
+
+    .ordem-3{
+        order: 3;
+    }
 }
 
 .logo-marca
@@ -46,6 +68,18 @@ body
     margin-left: 0;
     margin-right: 0;
     background-color:  rgb(192, 15, 15);
+}
+
+.nav-arrow{
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.nav-arrow a{
+    color: #129BB0;
+    font-size: 2em;
 }
 
 .separacaoMarrom
@@ -64,10 +98,16 @@ body
 
 .tituloProjeto
 {
-    font-size: 4.5vw;
+    font-size: 3.5em;
     text-align: center;
     color: rgb(94, 69, 33);
     z-index: 1;
+}
+
+@media (max-width: 972px){
+    .icone-titulo{
+        font-size: 0.6em;
+    }
 }
 
 .imagemProjeto
@@ -95,9 +135,7 @@ body
 .textoProjeto
 {
     margin-top: 140px;
-    word-break: break-all;
-    font-size: 1.65vw;
-    font-family: 'Zilla Slab', serif;
+    font-size: 1.1em;
 }
 
 .tituloOutrosProjetos
@@ -136,50 +174,48 @@ body
     text-decoration: underline red;
 }
 
-.redes-sociais
-{
+footer{
+    background-color:rgb(192, 15, 15);
+}
+
+footer h5{
+   padding-top: 10px; 
+   margin-bottom: 5vh;
+   color: white;
+}
+
+.redes-sociais{
     font-size: 1em;
 }
 
-.redes-sociais i
-{
+.redes-sociais i{
     font-size: 2.5em;
 }
 
-.redes-sociais a
-{
+@media (max-width: 480px){
+    .redes-sociais i{
+        font-size: 1.5em;
+    }
+}
+
+.redes-sociais a{
     color: white;
 }
 
-.email
-{
-    position: relative;
-    top: -10px;
+.email{
+    margin-top: 10px;
+    padding-bottom: 20px;
 }
 
-.email a
-{
+.email a{
     color: white;
 }
 
-.email i
-{
+.email i{
     position: relative;
     top: 4px;
     right: 6px;
     font-size: 1.3em;
-}
-
-.secaoFooter
-{
-    background-color: rgb(224, 18, 18);
-}
-
-.tituloRedes
-{
-    font-size: 1.2em;
-    text-align: center;
-    color: white;
 }
 
 .solid 

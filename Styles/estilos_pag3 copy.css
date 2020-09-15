@@ -101,6 +101,10 @@ p{
         text-align: center;
     }
 
+    .descricao-jogo{
+        text-align: center;
+    }
+
     .imagem-capa{
         min-width: 20vw;
         max-width: 40vw;
@@ -167,4 +171,9 @@ footer h5{
     top: 4px;
     right: 6px;
     font-size: 1.3em;
+}
+
+html 
+{
+    scroll-behavior: smooth;
 }
