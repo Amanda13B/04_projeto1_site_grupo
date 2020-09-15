@@ -95,6 +95,11 @@ p{
     border: 10px double rgb(192, 15, 15);
 }
 
+.carrossel-imagens{
+    width: 60vw;
+    margin: 8vh auto;
+}
+
 @media (max-width: 991px){
     
     .titulo-jogo h3{
@@ -118,11 +123,10 @@ p{
     .ordem-inversa-2{
         order: 2;
     }
-}
 
-.carrossel-imagens{
-    width: 60vw;
-    margin: 8vh auto;
+    .carrossel-imagens{
+        width: 80vw;
+    }
 }
 
 .style-text{
