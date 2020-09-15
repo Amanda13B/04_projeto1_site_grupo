@@ -1,16 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body{
     font-family: 'Zilla Slab', serif;
     background-color: rgb(39, 39, 39);
     color: white;
-}
-
-p{
-    font-size: 1em;
 }
 
 .barra-navegacao{
@@ -55,78 +46,76 @@ p{
     position: fixed;
     right: 10px;
     bottom: 15px;
-    z-index: 1;
 }
 
 .nav-arrow a{
-    color: #129BB0;
+    color: white;
     font-size: 2em;
 }
 
 .projetos-amanda{
+    background-color: rgb(88, 19, 7);
     border-top: 10px double red;
-    padding: 5vh 5vh 10vh 5vh;
+    margin: 0;
+    height: 170vh;
 }
 
-.projetos-amanda a,
-.projetos-guilherme a{
-    color: #129BB0;
+.projetos-amanda h2{
+    margin: 30px 0 0 20px;
 }
 
 .projetos-guilherme{
-    background-color: white;
-    color: red;
-    border-top: 10px double red;
-    padding: 5vh 5vh 10vh 5vh;
+    border-top: 10px double white;
+    color: rgb(224, 18, 18);
+    margin: 0;
+    height: 170vh;
 }
 
-.titulo-jogo{
-    margin: 5vh 0;
+.projetos-guilherme h2{
+    margin: 30px 20px 0 0;
+}
+
+.capa-principal-jogo{
+    height: 250px;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+h3.game-title{
     color: #129BB0;
 }
 
-.imagem-capa{
-    min-width: 10vw;
-    max-width: 30vw;
-    margin: 0 auto;
+.float-right{
+    float: right;
 }
 
-.imagem-capa img{
-    border: 10px double rgb(192, 15, 15);
+.float-left{
+    float: left;
 }
 
-.carrossel-imagens{
-    width: 60vw;
+.apresentacao-jogo{
+    clear: both;
+    width: 85vw;
+    height: 40vh;
     margin: 8vh auto;
 }
 
-@media (max-width: 991px){
-    
-    .titulo-jogo h3{
-        text-align: center;
-    }
+.apresentacao-jogo a{
+    color: #129BB0;
+    font-weight: 600;
+}
 
-    .descricao-jogo{
-        text-align: center;
-    }
+.paragrafo-direita{
+    position: relative;
+    top: 3vh;
+    left: 5vw;
+    width: 80vw;
+}
 
-    .imagem-capa{
-        min-width: 20vw;
-        max-width: 40vw;
-        margin: 0 auto 5vh auto;
-    }
-    
-    .ordem-inversa-1 {
-        order: 1;
-    }
-
-    .ordem-inversa-2{
-        order: 2;
-    }
-
-    .carrossel-imagens{
-        width: 80vw;
-    }
+.paragrafo-esquerda{
+    position: relative;
+    top: 3vh;
+    width: 70vw;
 }
 
 .style-text{
@@ -136,10 +125,11 @@ p{
 
 footer{
     background-color:rgb(192, 15, 15);
+    height: 31vh;
 }
 
 footer h5{
-   padding-top: 10px; 
+   padding: 10px 0 0 20px; 
    margin-bottom: 5vh;
 }
 
@@ -151,19 +141,13 @@ footer h5{
     font-size: 2.5em;
 }
 
-@media (max-width: 480px){
-    .redes-sociais i{
-        font-size: 1.5em;
-    }
-}
-
 .redes-sociais a{
     color: white;
 }
 
 .email{
-    margin-top: 10px;
-    padding-bottom: 20px;
+    position: relative;
+    top: 10px;
 }
 
 .email a{
@@ -175,9 +159,4 @@ footer h5{
     top: 4px;
     right: 6px;
     font-size: 1.3em;
-}
-
-html 
-{
-    scroll-behavior: smooth;
 }
