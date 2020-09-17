@@ -21,6 +21,7 @@ body
 
 .fotos
 {
+    width: 20vw;
     transition: transform .2s;
 }
 
@@ -41,6 +42,12 @@ body
     {
         margin: 5vh auto;
     }
+
+    .fotos
+    {
+        width: 40vw;
+    }
+
     .textoRevolto
     {
         top: 0;
