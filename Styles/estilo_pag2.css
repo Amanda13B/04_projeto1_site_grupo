@@ -22,7 +22,7 @@ body
 .titlePagina
 {
     color:  rgb(94, 69, 33);
-    font-size: 5em;
+    font-size: 3em;
 }
 
 @media (max-width: 991px){
