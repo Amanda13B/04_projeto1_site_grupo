@@ -16,13 +16,15 @@ body
 
 .header1
 {
+    display: flex;
+    position: relative;
     margin-top: 14vh;
 }
 
 .titlePagina
 {
     color:  rgb(94, 69, 33);
-    font-size: 3em;
+    font-size: 5em;
 }
 
 @media (max-width: 991px){
