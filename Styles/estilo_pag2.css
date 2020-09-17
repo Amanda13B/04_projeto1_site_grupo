@@ -16,14 +16,13 @@ body
 
 .header1
 {
-    margin-top: 12vh;
+    margin-top: 14vh;
 }
 
 .titlePagina
 {
     color:  rgb(94, 69, 33);
     font-size: 5em;
-    text-align: center;
 }
 
 @media (max-width: 991px){
