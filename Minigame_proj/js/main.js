@@ -2,8 +2,8 @@ var game;
 window.onload = function () {
     var config = {
         type: Phaser.AUTO,
-        width: 400,
-        height: 480,
+        width: 750,
+        height: 500,
         parent: 'phaser-game',
         backgroundColor: '#71c5cf',
         physics: {

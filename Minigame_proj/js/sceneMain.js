@@ -1,13 +1,19 @@
-class SceneMain extends Phaser.Scene {
-    constructor() {
+class SceneMain extends Phaser.Scene 
+{
+    constructor() 
+    {
         super('SceneMain');
     }
-    preload() {
+    preload() 
+    {
         // carrega as imagens
         this.load.image('bird', 'images/bird.png');
         this.load.image('pipe', 'images/pipe.png');
+        this.load.image('plane', 'images/plane_1_red.png');
+        this.load.image('curse', 'images/hazard_base.png');
     }
-    create() {
+    create() 
+    {
         // adiciona o score no jogo
         this.score = -1;
         this.labelScore = this.add.text(20, 20, 'score: 0',
@@ -23,20 +29,22 @@ class SceneMain extends Phaser.Scene {
         this.timedEvent = this.time.addEvent({ delay: 2000, callback: this.addRowOfPipes, callbackScope: this, loop: true });
 
         // adiciona o pássaro no jogo
-        this.bird = this.physics.add.sprite(100, 300, 'bird');
+        this.plane = this.physics.add.sprite(100, 300, 'plane');
         // define gravidade para o pássaro cair
-        this.bird.setGravityY(200);
+        this.plane.setGravityY(200);
 
         // adiciona interação mouse e tecla de espaço
-        this.input.on('pointerdown', this.moveBird, this);
+        this.input.on('pointerdown', this.movePlane, this);
         this.spaceKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
 
     }
-    moveBird() {
+    movePlane() 
+    {
         // define a velocidade da gravidade do pássaro a cada clique/tecla
-        this.bird.setVelocity(0, -100);
+        this.plane.setVelocity(0, -100);
     }
-    addRowOfPipes() {
+    addRowOfPipes() 
+    {
         // sorteia um valor entre 1 e 5
         // essa posição será o buraco na fileira de canos
         var hole = Math.floor(Math.random() * 5) + 1;
@@ -45,7 +53,7 @@ class SceneMain extends Phaser.Scene {
         // deixando 2 espaços na posição sorteada (hole e hole + 1)
         for (var i = 0; i < 8; i++)
             if (i != hole && i != hole + 1)
-                this.pipes.create(400, i * 60 + 30, 'pipe');
+                this.pipes.create(400, i * 60 + 30, 'curse');
 
         // define a velocidade da movimentação da fileira de canos
         this.pipes.setVelocityX(-200);
@@ -58,22 +66,24 @@ class SceneMain extends Phaser.Scene {
         this.score += 1;
         this.labelScore.setText('score: ' + this.score);
     }
-    restartGame() {
+    restartGame() 
+    {
         // reinicia o jogo;
         this.scene.start('SceneMain');
     }
-    update() {
+    update() 
+    {
         // se a tecla de espaço for pressionada, movimenta o pássaro
         if (this.spaceKey.isDown)
-            this.moveBird();
+            this.movePlane();
 
         // checando colisão com a fileira de canos
-        this.physics.world.collide(this.bird, this.pipes, function () {
+        this.physics.world.collide(this.plane, this.pipes, function () {
             this.restartGame();
         }, null, this);
 
         // checando colisão com as bordas do jogo
-        if (this.bird.y > game.config.height || this.bird.y < 0) {
+        if (this.plane.y > game.config.height || this.plane.y < 0) {
             this.restartGame();
         }
     }
