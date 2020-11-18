@@ -66,10 +66,10 @@ class SceneMain extends Phaser.Scene
         this.score += 1;
         this.labelScore.setText('score: ' + this.score);
     }
-    restartGame() 
+    endGame() 
     {
         // reinicia o jogo;
-        this.scene.start('SceneMain');
+        this.scene.start('SceneGameOver');
     }
     update() 
     {
@@ -79,12 +79,12 @@ class SceneMain extends Phaser.Scene
 
         // checando colisão com a fileira de canos
         this.physics.world.collide(this.plane, this.pipes, function () {
-            this.restartGame();
+            this.endGame();
         }, null, this);
 
         // checando colisão com as bordas do jogo
         if (this.plane.y > game.config.height || this.plane.y < 0) {
-            this.restartGame();
+            this.endGame();
         }
     }
 }

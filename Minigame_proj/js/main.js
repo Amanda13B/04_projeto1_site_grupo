@@ -12,7 +12,7 @@ window.onload = function () {
                 debug: false
             }
         },
-        scene: [SceneStart, SceneMain]//coloca as cenas que existirão no jogo, sendo a primeira a primeira cena que inicia o jogo
+        scene: [SceneStart, SceneMain, SceneGameOver]//coloca as cenas que existirão no jogo, sendo a primeira a primeira cena que inicia o jogo
     };
     game = new Phaser.Game(config);
 }
