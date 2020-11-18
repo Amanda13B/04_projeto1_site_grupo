@@ -26,12 +26,12 @@ class SceneMain extends Phaser.Scene
         // cria um grupo de canos
         this.pipes = this.physics.add.group();
         // chama a criação de uma fileira de canos a cada 2 segundos
-        this.timedEvent = this.time.addEvent({ delay: 2000, callback: this.addRowOfPipes, callbackScope: this, loop: true });
+        this.timedEvent = this.time.addEvent({ delay: 3000, callback: this.addRowOfPipes, callbackScope: this, loop: true });
 
         // adiciona o pássaro no jogo
         this.plane = this.physics.add.sprite(100, 300, 'plane');
         // define gravidade para o pássaro cair
-        this.plane.setGravityY(200);
+        this.plane.setGravityY(400);
 
         // adiciona interação mouse e tecla de espaço
         this.input.on('pointerdown', this.movePlane, this);
@@ -40,8 +40,8 @@ class SceneMain extends Phaser.Scene
     }
     movePlane() 
     {
-        // define a velocidade da gravidade do pássaro a cada clique/tecla
-        this.plane.setVelocity(0, -100);
+        // define a velocidade da gravidade do avião a cada clique/tecla
+        this.plane.setVelocity(0, -200);
     }
     addRowOfPipes() 
     {
@@ -52,11 +52,11 @@ class SceneMain extends Phaser.Scene
         // adiciona 6 canos
         // deixando 2 espaços na posição sorteada (hole e hole + 1)
         for (var i = 0; i < 8; i++)
-            if (i != hole && i != hole + 1)
-                this.pipes.create(400, i * 60 + 30, 'curse');
+            if (i != hole && i != hole + 1 && i != hole + 2)
+                this.pipes.create(screen.width - 0.1, i * 60 + 30, 'curse');
 
         // define a velocidade da movimentação da fileira de canos
-        this.pipes.setVelocityX(-200);
+        this.pipes.setVelocityX(-1000);
 
         // apaga a fileira de canos quando não for mais visível
         this.pipes.checkWorldBounds = true;
