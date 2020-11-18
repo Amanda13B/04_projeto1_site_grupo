@@ -31,7 +31,7 @@ class SceneMain extends Phaser.Scene
         // adiciona o pássaro no jogo
         this.plane = this.physics.add.sprite(100, 300, 'plane');
         // define gravidade para o pássaro cair
-        this.plane.setGravityY(400);
+        this.plane.setGravityY(900);
 
         // adiciona interação mouse e tecla de espaço
         this.input.on('pointerdown', this.movePlane, this);
@@ -41,7 +41,7 @@ class SceneMain extends Phaser.Scene
     movePlane() 
     {
         // define a velocidade da gravidade do avião a cada clique/tecla
-        this.plane.setVelocity(0, -200);
+        this.plane.setVelocity(0, -300);
     }
     addRowOfPipes() 
     {
@@ -56,7 +56,7 @@ class SceneMain extends Phaser.Scene
                 this.pipes.create(screen.width - 0.1, i * 60 + 30, 'curse');
 
         // define a velocidade da movimentação da fileira de canos
-        this.pipes.setVelocityX(-1000);
+        this.pipes.setVelocityX(-500);
 
         // apaga a fileira de canos quando não for mais visível
         this.pipes.checkWorldBounds = true;
