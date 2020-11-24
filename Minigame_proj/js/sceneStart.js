@@ -9,7 +9,7 @@ class SceneStart extends Phaser.Scene {
             game.config.height/2, 'Survive!',
             {
                 fontFamily: 'courier new',
-                color: '#ff1fgf',
+                color: '#4c078e',
                 fontSize: '50px',
             });
         this.start.setOrigin(0.5,0.5);
