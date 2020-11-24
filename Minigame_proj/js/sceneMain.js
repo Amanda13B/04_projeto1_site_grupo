@@ -11,11 +11,11 @@ class SceneMain extends Phaser.Scene
         this.load.image('curse', 'images/hazard_base.png');
         this.load.audio("planeSound1",["sons/loop_aviao_alterado(continuo).mp3"], "sons/loop_aviao_alterado(continuo).ogg");
         this.load.audio("planeSound2",["sons/loop_aviao_alterado(parte_interior).mp3"], "sons/loop_aviao_alterado(parte_interior).ogg");
+        this.load.audio("planeJumpSound", ["sons/404793__owlstorm__retro-video-game-sfx-jump.wav"]);
     }
     create() 
     {
-        // adiciona o score no jogo
-
+        //sons do avião
         this.planeSound1 = this.sound.add('planeSound1', {volume: 0.3});
         this.planeSound2 = this.sound.add('planeSound2', {volume: 0.3});
         this.planeSound1.play();
@@ -23,6 +23,7 @@ class SceneMain extends Phaser.Scene
         this.planeSound1.loop = true;
         this.planeSound2.loop = true;
 
+        // adiciona o score no jogo
         this.score = -1;
         this.labelScore = this.add.text(20, 20, 'score: 0',
             {
