@@ -10,7 +10,7 @@ class SceneGameOver extends Phaser.Scene {
             {
                 fontFamily: 'courier new',
                 color: '#ff1fgf',
-                fontSize: '78px',
+                fontSize: '80px',
             });
         this.start.setOrigin(0.5,0.5);
         this.input.on('pointerdown', this.restartGame, this);//clica com o mouse e chama a função startGame()
