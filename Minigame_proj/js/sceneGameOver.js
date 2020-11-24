@@ -9,7 +9,7 @@ class SceneGameOver extends Phaser.Scene {
             game.config.height/2, 'Game Over!',
             {
                 fontFamily: 'courier new',
-                color: '#ff1fgf',
+                color: '#af0928',
                 fontSize: '80px',
             });
         this.start.setOrigin(0.5,0.5);
