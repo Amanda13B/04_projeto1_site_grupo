@@ -13,7 +13,7 @@ class SceneGameOver extends Phaser.Scene {
                 fontSize: '80px',
             });
         this.start.setOrigin(0.5,0.5);
-        this.input.on('pointerdown', this.restartGame, this);//clica com o mouse e chama a função startGame()
+        this.input.on('pointerdown', this.restartGame, this);//clica com o mouse e chama a função restartGame()
     }
     restartGame() {
         // reinicia o jogo

@@ -7,8 +7,6 @@ class SceneMain extends Phaser.Scene
     preload() 
     {
         // carrega as imagens
-        this.load.image('bird', 'images/bird.png');
-        this.load.image('pipe', 'images/pipe.png');
         this.load.image('plane', 'images/plane_1_red.png');
         this.load.image('curse', 'images/hazard_base.png');
     }
