@@ -1,10 +1,14 @@
 class SceneGameOver extends Phaser.Scene {
-    constructor() {
+    constructor() 
+    {
         super('SceneGameOver');
     }
-    preload() {
+    preload() 
+    {
+
     }
-    create() {
+    create() 
+    {
         this.start = this.add.text(game.config.width/2,
             game.config.height/2, 'Game Over!',
             {
@@ -15,10 +19,13 @@ class SceneGameOver extends Phaser.Scene {
         this.start.setOrigin(0.5,0.5);
         this.input.on('pointerdown', this.restartGame, this);//clica com o mouse e chama a função restartGame()
     }
-    restartGame() {
+    restartGame() 
+    {
         // reinicia o jogo
          this.scene.start('SceneMain');//entra na cena de jogo
     }
-    update() {
+    update() 
+    {
+
     }
 }
