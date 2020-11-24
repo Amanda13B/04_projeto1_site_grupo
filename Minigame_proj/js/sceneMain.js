@@ -13,7 +13,7 @@ class SceneMain extends Phaser.Scene
         this.load.audio("planeSound1",["sons/loop_aviao_alterado(continuo).mp3"], "sons/loop_aviao_alterado(continuo).ogg");
         this.load.audio("planeSound2",["sons/loop_aviao_alterado(parte_interior).mp3"], "sons/loop_aviao_alterado(parte_interior).ogg");
         this.load.audio("planeJumpSound", ["sons/404793__owlstorm__retro-video-game-sfx-jump.wav"]);
-        this.load.audio("music1Action", ["ActionMusicEditada.wav"]);
+        this.load.audio("music1Action", ["sons/ActionMusicEditada.wav"]);
     }
     create() 
     {
