@@ -9,10 +9,20 @@ class SceneMain extends Phaser.Scene
         // carrega as imagens
         this.load.image('plane', 'images/plane_1_red.png');
         this.load.image('curse', 'images/hazard_base.png');
+        this.load.audio("planeSound1",["sons/loop_aviao_alterado(continuo).mp3"], "sons/loop_aviao_alterado(continuo).ogg");
+        this.load.audio("planeSound2",["sons/loop_aviao_alterado(parte_interior).mp3"], "sons/loop_aviao_alterado(parte_interior).ogg");
     }
     create() 
     {
         // adiciona o score no jogo
+
+        this.planeSound1 = this.sound.add('planeSound1', {volume: 0.3});
+        this.planeSound2 = this.sound.add('planeSound2', {volume: 0.3});
+        this.planeSound1.play();
+        this.planeSound2.play();
+        this.planeSound1.loop = true;
+        this.planeSound2.loop = true;
+
         this.score = -1;
         this.labelScore = this.add.text(20, 20, 'score: 0',
             {
