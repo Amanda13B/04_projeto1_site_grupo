@@ -7,6 +7,7 @@ class SceneMain extends Phaser.Scene
     preload() 
     {
         // carrega as imagens
+        this.load.image("desert", "images/background_deserto.png")
         this.load.image('plane', 'images/plane_1_red.png');
         this.load.image('curse', 'images/hazard_base.png');
         //carrega os audios
@@ -41,6 +42,10 @@ class SceneMain extends Phaser.Scene
                 fontSize: '20px'
             });
 
+
+        this.desert = this.add.sprite(game.config.width/2,game.config.height/2,"desert");
+        this.desert.setOrigin(0.5,0.5);
+        
         // cria um grupo de canos
         this.pipes = this.physics.add.group();
         // chama a criação de uma fileira de canos a cada 2 segundos
