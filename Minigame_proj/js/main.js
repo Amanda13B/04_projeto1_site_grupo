@@ -5,7 +5,7 @@ window.onload = function () {
         width: 750,
         height: 500,
         parent: 'phaser-game',
-        backgroundColor: '#71c5cf',
+        backgroundColor: '#56ceef',
         physics: {
             default: 'arcade',
             arcade: {
