@@ -50,6 +50,7 @@ class SceneMain extends Phaser.Scene
         this.pipes = this.physics.add.group();
         // chama a criação de uma fileira de canos a cada 2 segundos
         this.timedEvent = this.time.addEvent({ delay: 3000, callback: this.addRowOfPipes, callbackScope: this, loop: true });
+        this.pointsTimedEvent = this.time.addEvent({delay: 3000, callback: this.AddPoints, callbackScope: this, loop: true});
 
         // adiciona o pássaro no jogo
         this.plane = this.physics.add.sprite(100, 300, 'plane');
@@ -87,11 +88,14 @@ class SceneMain extends Phaser.Scene
         // apaga a fileira de canos quando não for mais visível
         this.pipes.checkWorldBounds = true;
         this.pipes.outOfBoundsKill = true;
-
+    }
+    AddPoints()
+    {
         // atualiza score
         this.score += 1;
         this.labelScore.setText('score: ' + this.score);
     }
+
     endGame() 
     {
         //Para todos os sons em loop (do aviao e da musica)
