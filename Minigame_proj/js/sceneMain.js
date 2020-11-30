@@ -79,7 +79,7 @@ class SceneMain extends Phaser.Scene
         // deixando 2 espaços na posição sorteada (hole e hole + 1)
         for (var i = 0; i < 8; i++)
             if (i != hole && i != hole + 1 && i != hole + 2)
-                this.pipes.create(screen.width - 0.1, i * 60 + 30, 'curse');
+                this.pipes.create(755 - 0.1, i * 60 + 30, 'curse');
 
         // define a velocidade da movimentação da fileira de canos
         this.pipes.setVelocityX(-500);
