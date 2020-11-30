@@ -1,11 +1,12 @@
-class SceneGameOver extends Phaser.Scene {
+class SceneGameOver extends Phaser.Scene 
+{
     constructor() 
     {
         super('SceneGameOver');
     }
     preload() 
     {
-
+        
     }
     create() 
     {
@@ -17,6 +18,7 @@ class SceneGameOver extends Phaser.Scene {
                 fontSize: '80px',
             });
         this.start.setOrigin(0.5,0.5);
+
         this.input.on('pointerdown', this.restartGame, this);//clica com o mouse e chama a função restartGame()
     }
     restartGame() 
